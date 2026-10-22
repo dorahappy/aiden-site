@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f5f0">
+  <meta name="description" content="现在就出发，记录真实的旅行。2026 年秋天，11 天、2 个国家、5 个目的地，从多洛米蒂的群山走到巴黎的街头。">
+  <title>现在就出发</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/dolomites.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <header class="site-header wrap" id="top">
+    <a class="brand" href="#top" aria-label="现在就出发，返回顶部"><span class="brand-symbol" aria-hidden="true">↗</span>现在就出发<span class="brand-en" lang="en">LET’S GO.</span></a>
+    <nav aria-label="主导航">
+      <a href="#journey">这一程</a>
+      <a href="#destinations">沿途风景</a>
+      <a href="#notes">旅行手记</a>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="切换深色模式" aria-pressed="false">夜间</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">2026 秋 · 意大利与法国</p>
+        <h1 id="hero-title">现在就出发<span>把日子，<br>过成风景。</span></h1>
+        <p class="hero-description">从多洛米蒂的山间，到巴黎的街头。<br>记录走过的路，也收藏想再去一次的地方。</p>
+        <a class="primary-link" href="#destinations">翻开旅行相册 <span aria-hidden="true">↗</span></a>
+        <p class="hero-date">2026.09.25 - 10.05 <span>欧洲自由行</span></p>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/dolomites.jpg" alt="夕阳下的富内斯山谷，教堂、草地与多洛米蒂群峰" width="2200" height="1238" fetchpriority="high">
+        <figcaption><span>富内斯山谷 · 多洛米蒂</span><span lang="en">Val di Funes, Italy</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="summary wrap" id="journey" aria-label="旅行概览">
+      <div class="summary-intro"><p class="eyebrow">我的秋日旅行</p><p>一次出发，<br>收集了这些回忆。</p></div>
+      <dl class="stats">
+        <div><dt>在路上的日子</dt><dd>11<span>天</span></dd></div>
+        <div><dt>途经国家</dt><dd>2<span>个</span></dd></div>
+        <div><dt>停留目的地</dt><dd>5<span>站</span></dd></div>
+      </dl>
+    </section>
+
+    <section class="route-section wrap" aria-labelledby="route-title">
+      <div class="route-heading"><h2 id="route-title">这一程，走过哪里</h2><p>米兰出发，再回到米兰。</p></div>
+      <ol class="route">
+        <li><a href="#stop-milan"><small>抵达 / 返回</small><strong>米兰</strong><span lang="en">Milano</span></a></li>
+        <li><a href="#stop-dolomites"><small>09.26 - 09.28</small><strong>多洛米蒂</strong><span lang="en">Dolomites</span></a></li>
+        <li><a href="#stop-florence"><small>09.28 - 09.30</small><strong>佛罗伦萨</strong><span lang="en">Firenze</span></a></li>
+        <li><a href="#stop-rome"><small>09.30 - 10.02</small><strong>罗马</strong><span lang="en">Roma</span></a></li>
+        <li><a href="#stop-paris"><small>10.02 - 10.05</small><strong>巴黎</strong><span lang="en">Paris</span></a></li>
+      </ol>
+    </section>
+
+    <section class="destinations wrap" id="destinations" aria-labelledby="destinations-title">
+      <div class="section-heading"><p class="eyebrow" lang="en">PLACES & MOMENTS</p><h2 id="destinations-title">有些风景，值得一再翻看。</h2><p>自己拍的照片，自己走过的旅程。点开照片，看看当时的故事。</p></div>
+      <div class="photo-grid">
+        <article class="place place-featured" id="stop-dolomites">
+          <button class="photo-button" type="button" data-stop="dolomites" aria-haspopup="dialog" aria-label="查看多洛米蒂照片与旅行记录"><img src="assets/dolomites.jpg" alt="富内斯山谷中的教堂与群山" width="2200" height="1238" loading="lazy"><span class="photo-action" aria-hidden="true">↗</span></button>
+          <div class="place-caption"><div><span class="place-country">意大利 / 山野</span><h3>多洛米蒂</h3></div><p>赶上山谷里的最后一抹夕阳。</p></div>
+        </article>
+        <article class="place place-florence" id="stop-florence">
+          <button class="photo-button" type="button" data-stop="florence" aria-haspopup="dialog" aria-label="查看佛罗伦萨照片与旅行记录"><img src="assets/florence.jpg" alt="树影之间，暮色中的佛罗伦萨圣母百花大教堂" width="1400" height="1733" loading="lazy"><span class="photo-action" aria-hidden="true">↗</span></button>
+          <div class="place-caption"><div><span class="place-country">意大利 / 艺术</span><h3>佛罗伦萨</h3></div><p>在街巷里，与文艺复兴相遇。</p></div>
+        </article>
+        <article class="place place-rome" id="stop-rome">
+          <button class="photo-button" type="button" data-stop="rome" aria-haspopup="dialog" aria-label="查看罗马照片与旅行记录"><img src="assets/rome.jpg" alt="蓝天下的罗马斗兽场" width="1012" height="1800" loading="lazy"><span class="photo-action" aria-hidden="true">↗</span></button>
+          <div class="place-caption"><div><span class="place-country">意大利 / 历史</span><h3>罗马</h3></div><p>两千年的故事，就在眼前。</p></div>
+        </article>
+        <article class="place place-paris" id="stop-paris">
+          <button class="photo-button" type="button" data-stop="paris" aria-haspopup="dialog" aria-label="查看巴黎照片与旅行记录"><img src="assets/paris.jpg" alt="树木环绕的巴黎埃菲尔铁塔" width="1012" height="1800" loading="lazy"><span class="photo-action" aria-hidden="true">↗</span></button>
+          <div class="place-caption"><div><span class="place-country">法国 / 城市</span><h3>巴黎</h3></div><p>看过卢浮宫，也记得那顿法餐。</p></div>
+        </article>
+        <article class="place place-milan" id="stop-milan">
+          <button class="photo-button" type="button" data-stop="milan" aria-haspopup="dialog" aria-label="查看米兰照片与旅行记录"><img src="assets/milan.jpg" alt="晴空下的米兰大教堂与广场" width="1400" height="788" loading="lazy"><span class="photo-action" aria-hidden="true">↗</span></button>
+          <div class="place-caption"><div><span class="place-country">意大利 / 起点与终点</span><h3>米兰</h3></div><p>最后一天，留给大教堂和好天气。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="notes wrap" id="notes" aria-labelledby="notes-title">
+      <div class="section-heading"><p class="eyebrow" lang="en">THINGS I BROUGHT BACK</p><h2 id="notes-title">带回来的，不只是照片。</h2><p>把这次旅程里记住的小事，留给下次出发的自己。</p></div>
+      <div class="note-layout">
+        <div class="note-intro"><span aria-hidden="true">“</span><p>下次，<br>把行程排得<br>再慢一点。</p><small>写在这次旅程之后</small></div>
+        <div class="note-list">
+          <details open><summary>给路线少一点折返<span aria-hidden="true">+</span></summary><p>这次从米兰出发，最后又飞回米兰回国，兜了一个圈，也花了不少时间赶车。下次想试试不同城市进出的路线，把时间留给目的地。</p></details>
+          <details><summary>给山里多留一点时间<span aria-hidden="true">+</span></summary><p>多洛米蒂两头都要赶路，真正完整游玩的时间只有一天。山谷日落、刀锋山和休斯高原都很美，下次想多住几晚，慢慢走。</p></details>
+          <details><summary>美术馆里，听懂比看过更好<span aria-hidden="true">+</span></summary><p>佛罗伦萨和罗马的艺术值得仔细欣赏。出发前了解一点文艺复兴的故事，参观时配上讲解，会比走马观花更有收获。</p></details>
+          <details><summary>记住几顿好吃的饭<span aria-hidden="true">+</span></summary><p>佛罗伦萨的巴师傅、罗马梵蒂冈附近的 Alice 披萨，还有巴黎的 La Jacobine。这几家，是我想在旅行手记里留下的味道。</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="closing wrap" aria-label="旅行寄语"><p>还没去过的地方，<br><span>留给下一次出发。</span></p><a href="#top">回到顶部 <span aria-hidden="true">↑</span></a></section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 现在就出发 · 记录旅行，也记录生活</p><a class="icp-link" href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">浙ICP备2026088446号-1</a></footer>
+
+  <dialog id="story-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="关闭旅行照片">×</button>
+    <img id="dialog-image" alt="">
+    <div class="dialog-copy"><p class="eyebrow" id="dialog-location"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><p class="dialog-date" id="dialog-date"></p></div>
+  </dialog>
+</body>
+</html>
